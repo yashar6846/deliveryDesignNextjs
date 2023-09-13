@@ -6,8 +6,8 @@ function Home() {
   return (
     <main>
      <Slider />
-     <Offer />
      <Featured />
+     <Offer />
     </main>
   )
 }
