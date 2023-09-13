@@ -1,13 +1,15 @@
-import Image from 'next/image'
-import MenuPage from './menu/page'
+import Featured from "./components/Featured"
+import Offer from "./components/Offer"
+import Slider from "./components/Slider"
 
-export default function Home() {
+function Home() {
   return (
-<>
- 
- <MenuPage />
- 
-
-</>
+    <main>
+     <Slider />
+     <Offer />
+     <Featured />
+    </main>
   )
 }
+
+export default Home
