@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 type Props={
     price: number
     id:number
-    options?: {titles: string, additionalPrice: number}[]
+    options?: {titles: string, additionalPrice: number}
 }
 
 function Price({price, id, options}:Props) {
@@ -17,7 +17,7 @@ function Price({price, id, options}:Props) {
         quantity * (options ? price + options[selected].additionalPrice : price) 
     )
    },[quantity, selected, options, price])
-   
+
 
   return (
     <div className="flex flex-col gap-4">
